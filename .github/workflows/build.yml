@@ -20,22 +20,29 @@ jobs:
             target_name: armhf
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get -y install pkg-config \
             librust-openssl-dev libssl-dev \
             openssl librust-openssl-sys-dev
-      - uses: actions-rs/toolchain@v1
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
           target: ${{ matrix.target }}
-      - uses: actions-rs/cargo@v1
+      - name: Clean
+        uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: clean
-      - uses: actions-rs/cargo@v1
+      - name: Build
+        uses: actions-rs/cargo@v1
         with:
           use-cross: true
           command: build
