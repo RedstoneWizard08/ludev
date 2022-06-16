@@ -1,0 +1,30 @@
+[package]
+description = "Blank Description"
+edition = "2021"
+license = "GPL-3.0"
+name = "gdlib-loader"
+version = "0.1.0"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[workspace]
+members = [
+    "faber",
+    "forgic",
+    "libic",
+    "ludic",
+    "quantum",
+    "vanel"
+]
+
+[dependencies]
+faber = {version = "0.1.0", path = "faber"}
+forgic = {version = "0.1.0", path = "forgic"}
+libic = {version = "0.1.0", path = "libic"}
+ludic = {version = "0.1.0", path = "ludic"}
+quantum-mc = {version = "0.1.0", path = "quantum"}
+vanel = {version = "0.1.0", path = "vanel"}
+neon = {version = "0.10.1", default-features = false, features = ["napi-6", "channel-api", "promise-api"]}
+openssl = {version = "0.10", features = ["vendored"]}

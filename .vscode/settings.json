@@ -1,3 +1,6 @@
 {
-    "nuxt.isNuxtApp": false
+    "nuxt.isNuxtApp": false,
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///workspace/ludev/.github/workflows/build.yml"
+    }
 }
