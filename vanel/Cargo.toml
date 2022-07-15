@@ -1,0 +1,12 @@
+[package]
+description = "Blank Description"
+edition = "2021"
+license = "GPL-3.0"
+name = "vanel"
+version = "0.1.0"
+
+[dependencies]
+libic = {version = "0.1.0", path = "../libic"}
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+xmltojson = "0"
