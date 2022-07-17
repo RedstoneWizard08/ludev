@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@types/node': ^18.0.0
@@ -9,7 +9,7 @@ specifiers:
 devDependencies:
   '@types/node': 18.0.0
   cargo-cp-artifact: 0.1.6
-  ts-node: 10.8.1_w7x2tbnlqsjlyiccdck6zsdv74
+  ts-node: 10.8.1_b7efa985ab8492bc20421895ecc875ff
   typescript: 4.7.3
 
 packages:
@@ -90,7 +90,7 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
 
-  /ts-node/10.8.1_w7x2tbnlqsjlyiccdck6zsdv74:
+  /ts-node/10.8.1_b7efa985ab8492bc20421895ecc875ff:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
